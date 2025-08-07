@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Highlights of the CDS – Critical Design Strategy</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Limit to 5 words
+    document.addEventListener("DOMContentLoaded", function () {
+      const checkboxes = document.querySelectorAll(".word-grid input[type='checkbox']");
+      checkboxes.forEach(cb => {
+        cb.addEventListener("change", () => {
+          const checked = document.querySelectorAll(".word-grid input[type='checkbox']:checked");
+          if (checked.length > 5) {
+            cb.checked = false;
+            alert("Please select no more than 5 words.");
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+ <header class="header">
+  <div class="container">
+    <h1>Critical Design Strategy (CDS)</h1>
+    <p class="tagline">A structured method for evaluating visualisation designs</p>
+  </div>
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="highlights.html" >Highlights</a></li>
+        <li><a href="overview.html" class="active">Overview</a></li>
+        <li><a href="detail.html" >Detail</a></li>
+        <li><a href="review.html" >Review</a></li>
+        <li><a href="reading.html">Further Reading</a></li>
+    </div>
+  </nav>
+</header>
+  
+
+  <section class="intro-section">
+    <div class="container">
+    <h1>Stage 1: Overview</h1>
+    <p>
+      The first stage of the Critical Design Strategy (CDS) is about gaining a thorough and holistic understanding of the visualisation artefact. Critical thinking begins by ensuring the appraiser is well-informed. This means preparing adequately, understanding the challenge, and deeply engaging with the data.
+    </p>
+    <p>
+      A visualisation design cannot be evaluated in isolation from its context. Appraisers must examine the structure and characteristics of the data alongside its variables, types (categorical, ordinal, quantitative), sparsity, and origin. They must also understand the purpose of the visualisation, the intended user tasks, and the environment in which the artefact will be used.
+    </p>
+
+    <h2>Naming and Summarising</h2>
+    <p>
+      To begin the evaluation, the appraiser names the artefact and writes a short title (typically two or three words). This naming process is crucial as it forces a designer to define what the artefact is fundamentally about and initiates reflective thinking.
+    </p>
+
+    <h2>Selecting Descriptive Words</h2>
+    <p>
+      Select <strong>five</strong> words that best describe your initial impression of the artefact. This early, intuitive assessment will later be revisited in the review stage.
+    </p>
+
+    <form>
+      <div class="word-grid">
+        <label><input type="checkbox" name="words" value="clear">Clear</label>
+        <label><input type="checkbox" name="words" value="confusing">Confusing</label>
+        <label><input type="checkbox" name="words" value="sensible">Sensible</label>
+        <label><input type="checkbox" name="words" value="indifferent">Indifferent</label>
+        <label><input type="checkbox" name="words" value="clever">Clever</label>
+        <label><input type="checkbox" name="words" value="reliable">Reliable</label>
+        <label><input type="checkbox" name="words" value="pointless">Pointless</label>
+        <label><input type="checkbox" name="words" value="indistinctive">Indistinctive</label>
+        <label><input type="checkbox" name="words" value="complex">Complex</label>
+        <label><input type="checkbox" name="words" value="organised">Organised</label>
+        <label><input type="checkbox" name="words" value="moderate">Moderate</label>
+        <label><input type="checkbox" name="words" value="spectacular">Spectacular</label>
+        <label><input type="checkbox" name="words" value="useless">Useless</label>
+        <label><input type="checkbox" name="words" value="average">Average</label>
+        <label><input type="checkbox" name="words" value="bad">Bad</label>
+        <label><input type="checkbox" name="words" value="fulfilling">Fulfilling</label>
+        <label><input type="checkbox" name="words" value="useful">Useful</label>
+        <label><input type="checkbox" name="words" value="fair">Fair</label>
+        <label><input type="checkbox" name="words" value="vague">Vague</label>
+        <label><input type="checkbox" name="words" value="beautiful">Beautiful</label>
+      </div>
+    </form>
+
+    <p>
+      This stage provides a foundation for deeper critique by encouraging reflection before analysis, setting the tone for more detailed exploration in Stage 2.
+    </p>
+  </div>
+</section>
+</body>
+</html>
