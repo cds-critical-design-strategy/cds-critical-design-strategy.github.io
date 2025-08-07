@@ -144,3 +144,20 @@ body {
     .word-grid input[type="checkbox"] {
       margin-right: 6px;
     }
+
+
+/****************authors **********/
+#authors {
+    margin-top: 3em;
+    padding: 1em;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+#authors ul {
+    padding-left: 1.5em;
+}
+
+#authors li {
+    margin-bottom: 0.5em;
+}
