@@ -17,6 +17,13 @@ body {
   padding: 20px;
 }
 
+ul, ol {
+  padding-left: 40px;
+  margin-left: 0;
+  list-style-position: outside; /* default, bullets outside */
+}
+
+
 /* Header */
 .header {
   background-color: #0b60b0;
