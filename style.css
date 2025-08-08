@@ -118,9 +118,13 @@ body {
     .heuristics-table th {
       background-color: #e0f0ff;
     }
-    .radio-group label {
-      margin-right: 10px;
-    }
+   
+/* Optional: hover effect for unselected buttons */
+.radio-group label:hover {
+  background-color: #cce5ff;
+  border-color: #007bff;
+}
+
     .range-labels {
       white-space: nowrap;
     }
@@ -147,17 +151,20 @@ body {
 
 
 /****************authors **********/
-#authors {
-    margin-top: 3em;
-    padding: 1em;
-    background-color: #f5f5f5;
-    border-radius: 8px;
+.authors {
+    text-align: center;       /* centers the whole block */
+    margin-top: 1.5em;        /* space above */
+    margin-bottom: 1.5em;     /* space below */
+    font-family: Georgia, serif;
 }
 
-#authors ul {
-    padding-left: 3.5em;
+.authors p {
+    margin: 0.2em 0;          /* tight vertical spacing */
+    font-size: 1.1em;
 }
 
-#authors li {
-    margin-bottom: 0.5em;
+.authors .affiliation {
+    font-size: 0.95em;
+    color: #555;              /* softer grey for affiliation */
+    font-style: italic;
 }
